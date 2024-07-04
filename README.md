@@ -37,13 +37,16 @@ The data pipeline consists of the following steps:
 The data warehouse is designed using a snowflake schema to handle the large and complex car listings data efficiently. The snowflake schema ensures that data is normalized, reducing redundancy and improving query performance. This structure allows for detailed and accurate analysis of the car listings data. ![The Data Warehouse Logical Design](https://github.com/ZaidHani/TurboInsights/blob/main/images/data%20warehouse.jpg)
 
 ### Data Mart
-The data mart is focused on dealer performance metrics, providing a streamlined subset of the data warehouse tailored for analytical queries related to dealers, making it easier to perform specific analytical queries related to dealer performance. This structure supports efficient reporting and visualization in Power BI.
+The data mart is focused on dealer performance metrics, providing a streamlined subset of the data warehouse tailored for analytical queries related to dealers, making it easier to perform specific analytical queries related to dealer performance. This structure supports efficient reporting and visualization in Power BI. ![Data Mart Logical Design](https://github.com/ZaidHani/TurboInsights/blob/main/images/data%20mart.jpg)
 
 ### Dashboard
 The Power BI dashboard is built using the data from the data mart. It provides a comprehensive view of dealer performance, offering insights such as:
 * **Dealer Activity**
+![Dash Dealers](https://github.com/ZaidHani/TurboInsights/blob/main/images/dash2.jpg)
 * **Price Distribution**
+![Dash Prices](https://github.com/ZaidHani/TurboInsights/blob/main/images/dash5.jpg)
 * **Distribution of Cars Vendors**
+![Dash Cars](https://github.com/ZaidHani/TurboInsights/blob/main/images/dash3.jpg)
 
 ### Conclusion
 TurboInsights provides a robust framework for analyzing car listings data, from data ingestion and transformation to storage and visualization. By leveraging PySpark, MySQL, and Power BI, this project demonstrates how to build a scalable and efficient data engineering solution for real-world data analysis.
