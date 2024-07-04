@@ -21,7 +21,7 @@ The project is structured into several key components:
 The data pipeline consists of the following steps:
 
 1. Data Extraction: The Data was extracted from CarGurus.com using a webscraping code and saved as a CSV file on Kaggle. Kaggle API was used to download the data and unzip it.
-2. Data Loading: The CSV file is loaded into a staging area using PySpark. [!Reading the CSV file using PySpark](https://github.com/ZaidHani/TurboInsights/blob/main/images/read%20csv%20file.jpg)
+2. Data Loading: The CSV file is loaded into a staging area using PySpark. ![Reading the CSV file using PySpark](https://github.com/ZaidHani/TurboInsights/blob/main/images/read%20csv%20file.jpg)
 3. Data Transformation:
     * Dropping unrelevant columns from the dataset.
     * Cleaning null values.
@@ -34,7 +34,7 @@ The data pipeline consists of the following steps:
 5. Data Mart Creation: A data mart focused on dealers perforamnce is created from the data warehouse for optimized analytical queries.
 
 ### Data Warehouse Schema
-The data warehouse is designed using a snowflake schema to handle the large and complex car listings data efficiently. The snowflake schema ensures that data is normalized, reducing redundancy and improving query performance. This structure allows for detailed and accurate analysis of the car listings data. [!The Data Warehouse Logical Design](https://github.com/ZaidHani/TurboInsights/blob/main/images/data%20warehouse.jpg)
+The data warehouse is designed using a snowflake schema to handle the large and complex car listings data efficiently. The snowflake schema ensures that data is normalized, reducing redundancy and improving query performance. This structure allows for detailed and accurate analysis of the car listings data. ![The Data Warehouse Logical Design](https://github.com/ZaidHani/TurboInsights/blob/main/images/data%20warehouse.jpg)
 
 ### Data Mart
 The data mart is focused on dealer performance metrics, providing a streamlined subset of the data warehouse tailored for analytical queries related to dealers, making it easier to perform specific analytical queries related to dealer performance. This structure supports efficient reporting and visualization in Power BI.
